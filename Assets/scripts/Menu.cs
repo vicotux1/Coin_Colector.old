@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
 	public AudioSource Audio;
 	public AudioClip Button;
 	private void Awake() {
-		cursorfalse();
+		cursortrue();
 	}
 	public void Quit(){
         #if UNITY_EDITOR 
@@ -44,7 +44,7 @@ public class Menu : MonoBehaviour
 
 	public void scene(string name){ 
 		SceneManager.LoadScene (name);
-		Game_Manager.estancia.music();
+		//Game_Manager.estancia.music();
 		}
 	public void Vsync(int Vsync){
 		QualitySettings.vSyncCount = Vsync;}
